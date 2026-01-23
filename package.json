@@ -1,0 +1,42 @@
+{
+  "name": "@cboone/alpine-ch-plugins",
+  "version": "1.0.0",
+  "description": "Custom Alpine.js plugins and magic properties",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.js",
+    "./magics": "./src/magics/index.js",
+    "./magics/*": "./src/magics/*.js",
+    "./plugins": "./src/plugins/index.js",
+    "./plugins/*": "./src/plugins/*.js"
+  },
+  "files": [
+    "src"
+  ],
+  "keywords": [
+    "alpine",
+    "alpinejs",
+    "lightgallery",
+    "plugins",
+    "tippy"
+  ],
+  "author": "cboone",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cboone/alpine-ch-plugins.git"
+  },
+  "peerDependencies": {
+    "alpinejs": "^3.0.0",
+    "lightgallery": "^2.0.0",
+    "tippy.js": "^6.0.0"
+  },
+  "peerDependenciesMeta": {
+    "lightgallery": {
+      "optional": true
+    }
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  }
+}
