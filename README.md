@@ -1,11 +1,11 @@
-# @cboone/alpine-ch-plugins
+# @cboone/alpine-plugins
 
 Custom Alpine.js plugins and magic properties.
 
 ## Installation
 
 ```bash
-npm install @cboone/alpine-ch-plugins tippy.js lightgallery
+npm install @cboone/alpine-plugins tippy.js lightgallery
 ```
 
 **Note:** This package is published to GitHub Packages. Configure your `.npmrc`:
@@ -20,7 +20,7 @@ npm install @cboone/alpine-ch-plugins tippy.js lightgallery
 
 ```javascript
 import Alpine from "alpinejs";
-import { registerPlugins } from "@cboone/alpine-ch-plugins";
+import { registerPlugins } from "@cboone/alpine-plugins";
 
 registerPlugins(Alpine);
 Alpine.start();
@@ -32,7 +32,7 @@ If you don't need the gallery plugin:
 
 ```javascript
 import Alpine from "alpinejs";
-import { registerPlugins } from "@cboone/alpine-ch-plugins";
+import { registerPlugins } from "@cboone/alpine-plugins";
 
 registerPlugins(Alpine, { lightgallery: false });
 Alpine.start();
@@ -42,7 +42,7 @@ Alpine.start();
 
 ```javascript
 import Alpine from "alpinejs";
-import { tippyPlugin } from "@cboone/alpine-ch-plugins";
+import { tippyPlugin } from "@cboone/alpine-plugins";
 
 Alpine.plugin(tippyPlugin);
 Alpine.start();
@@ -52,7 +52,7 @@ Alpine.start();
 
 ```javascript
 import Alpine from "alpinejs";
-import clipboard from "@cboone/alpine-ch-plugins/magics/clipboard";
+import clipboard from "@cboone/alpine-plugins/magics/clipboard";
 
 Alpine.plugin(clipboard);
 Alpine.start();
@@ -122,7 +122,7 @@ Tooltips with optional placement and follow cursor.
 Export for programmatically hiding all Tippy instances:
 
 ```javascript
-import { hideAll } from "@cboone/alpine-ch-plugins";
+import { hideAll } from "@cboone/alpine-plugins";
 
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") {

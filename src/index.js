@@ -1,5 +1,5 @@
 /**
- * @cboone/alpine-ch-plugins
+ * @cboone/alpine-plugins
  *
  * Custom Alpine.js plugins and magic properties.
  *
@@ -18,7 +18,7 @@
  *
  * Usage:
  *   import Alpine from "alpinejs";
- *   import { registerPlugins } from "@cboone/alpine-ch-plugins";
+ *   import { registerPlugins } from "@cboone/alpine-plugins";
  *   registerPlugins(Alpine);
  *   Alpine.start();
  */
