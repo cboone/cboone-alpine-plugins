@@ -6,7 +6,7 @@ on:
 
 jobs:
   publish:
-    uses: cboone/gh-actions/.github/workflows/npm-publish.yml@main
+    uses: cboone/gh-actions/.github/workflows/npm-publish.yml@v1
     with:
       node-version: "20"
     secrets:
